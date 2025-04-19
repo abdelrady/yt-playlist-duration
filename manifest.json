@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Playlist Duration",
+    "version": "1.0",
+    "description": "Shows total duration of YouTube playlist videos.",
+    "permissions": ["scripting"],
+    "host_permissions": ["*://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/watch?*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
